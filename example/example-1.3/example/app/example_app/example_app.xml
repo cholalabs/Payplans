@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <name>Example App</name>
+    <version>0.1.0</version>
+    <creationDate>Nov 2011</creationDate>
+    <author>PayPlans</author>
+    <authorEmail>payplans@readybytes.in</authorEmail>
+    <authorUrl>http://www.jpayplans.com</authorUrl>
+    <copyright>2009 Ready Bytes Software Labs Pvt. Ltd.</copyright>
+    <license>GNU General Public License v2</license>
+    <icon>example.png</icon>
+    <tags>example</tags>
+    <description>
+    	An Example app description, which is shown during app selection window.
+	<![CDATA[    		
+		You can add help formatted in <strong>HTML</strong>. 
+		Even youtube video can be added here.
+	]]>
+
+    </description>
+    <help>
+	These instructions are displayed on app edit screen.
+        We recommend you to add setup instruction over here.
+	<![CDATA[    		
+		You can add help formatted in <strong>HTML</strong>. 
+		Even videos can be added here.
+	]]>
+    </help>
+	<!-- 
+		You can add multiple paths here, seperate them with comma. 
+		e.g. addpath="/components/com_payplans/elements, /components/com_docman/elements" 
+	-->
+	<params addpath="/components/com_payplans/elements">
+		<param	name="merchant" 	
+				default="" 		
+				type="text" 	
+				size="50" 
+				label="COM_PAYPLANS_APP_ALERTPAY_MERCHANT_EMAIL"  
+				description="COM_PAYPLANS_APP_ALERTPAY_EMAIL_MERCHANT_DESC" 
+				class="email"
+				/>
+								
+		<param  name="currency" 		
+				default="USD" 	
+				type="currency" 
+				size="10" 
+				label="COM_PAYPLANS_APP_ALERTPAY_CURRENCY" 
+				description="COM_PAYPLANS_APP_ALERTPAY_CURRENCY_DESC" 
+				global="true"
+				/>
+				
+		<param  type="spacer" 
+		  		default="COM_PAYPLANS_APP_ALERTPAY_SANDBOX_TESTING" 
+		  		/>
+		  		
+     	<param  name="sandbox" 
+        		type="radio" 
+        		default="0" 
+        		label="COM_PAYPLANS_APP_ALERTPAY_SANDBOX" 
+        		description="COM_PAYPLANS_APP_ALERTPAY_SANDBOX_DESC">
+		          <option value="0">COM_PAYPLANS_NO</option>
+		          <option value="1">COM_PAYPLANS_YES</option>
+        		</param>      		
+	</params>
+
+</config>

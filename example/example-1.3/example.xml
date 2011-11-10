@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="payplans" method="upgrade">
+    <name>PayPlans-QuickPay</name>
+    <version>@global.version@.@svn.lastrevision@</version>
+    <creationDate>Jan 2010</creationDate>
+    <author>Team Payplans/JoomlaXi</author>
+    <authorEmail>team@readybytes.in</authorEmail>
+    <authorUrl>http://www.jpayplans.com</authorUrl>
+    <copyright>2009-11 Ready Bytes Software Labs Pvt. Ltd.</copyright>
+    <license>GNU General Public License v2</license>
+    <description>PayPlans : Alert Pay Payment Gateway Integration</description>
+	<files>
+		<filename plugin="quickpay">quickpay.php</filename>
+		<folder>quickpay</folder>
+	</files>
+</install>
